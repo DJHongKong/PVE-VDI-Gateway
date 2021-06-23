@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建数据库</title>
+    <style>
+        @font-face
+        {
+        font-family: simhei;
+        src: url('../font/simhei.ttf'),
+        }
+        body {
+            font-family: simhei;
+            background: #00a4f0;
+        }
+        
+        div {
+            width: 400px;
+            height: 340px;
+            margin: 6% auto;
+            padding-top: 40px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 25px;
+        }
+        table{
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #003e5b;
+        }
+        h2{
+            margin-top: 10%;
+            text-align: center;
+        }
+        tr{
+            width: 64px;
+        }
+        td{
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+            color: #003e5b;
+        }
+        
+        #loginbtn {
+            width: 210px;
+            height: 40px;
+            margin-top: 40px;
+            font-size: 20px;
+            color: #003e5b;
+            border: rgba(0, 62, 91, 0.8);
+            border-radius: 15px;
+            background-color: rgba(0, 62, 91, 0.3);
+        }
+        
+        .input {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>创建数据库</h2>
+    <div>
+        <form action="db.php" method="post">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <h1>权限确认</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>密码:</td>
+                    <td>
+                        <input type="password" name="password" id="password" class="input">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="确认" id="loginbtn">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
